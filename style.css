@@ -2,9 +2,16 @@ body {
   margin: 0;
   padding: 0;
 }
+* {
+  box-sizing: border-box;
+}
+.hero {
+    height: 550px;
+    align-content: space-between;
+}
 .hero , .footer {
     background-color: #1f2937;
-    margin: 0px;
+    
     
 }
 .nav {
@@ -12,6 +19,7 @@ body {
     justify-content: space-around;
     align-items: center;
     background-color: #1f2937;
+    
     
 }
     
@@ -38,20 +46,31 @@ a {
     justify-content: center;
     align-items: center;
     margin: 48px auto;
-    gap: 16px;
+    gap: 8px;
+    padding: 24px auto;
+    min-width: 1200px;
+    
+}
+.hero-section div {
+    max-width: 500px;
+    min-height: auto;
+    flex: 1;
 }
 .hero-section div img {
-    width: 590px;
-    flex-basis: 500px;
+    max-width: 500px;
+    flex: 1;
+    
+    
 }
 .first {
     display: flex;
     flex-basis: 500px;
     flex-direction: column;
-    justify-content: start;
+    justify-content: space-between;
     align-items: start;
     gap: 8px;
     align-self: stretch;
+    
     
    
 
@@ -75,6 +94,72 @@ a {
     border: none;
     padding: 8px 24px;
     border-radius: 8%;
-
+}
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.services .content {
+    display: flex;
+    justify-content: space-around;
+    margin: 16px 0px;
+    min-width: 1000px;
 
 }
+.services .content div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    flex: 1;
+}
+.content div img {
+    border-color: #3882f6;
+    border-width: 4px;
+    border-style: solid;
+    width: 128px;
+    height: 128px;
+    border-radius: 4%;
+}
+.services h1 {
+    text-align: center;
+    margin: 10px auto;
+    font-size: 36px;
+    font-weight: 900;
+    color: #1f2937;
+}
+.Quote_Section {
+    background-color: #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 48px auto;
+}
+.Quote_Section div {
+    background-color: #e5e7eb;
+    max-width: 600px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.Quotation {
+    font-family: sans-serif;
+    font-size: 36px;
+    font-style: italic;
+    color: #1f2937;
+    margin: 0;
+}
+.the_speaker {
+    align-self: flex-end;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+
